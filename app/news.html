@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>您好！欢迎来到3.4剧情服！</title>
+<meta name="author" content="Administrator" />
+
+<link rel="shortcut icon" href="http://static.codoon.com/image/universal/codoon.ico" />
+
+<link rel="stylesheet" href="style/css/jquery.fullPage.css" />
+<link rel="stylesheet" href="style/css/base.css" />
+<link rel="stylesheet" href="style/css/welcome.css" />
+<link rel="stylesheet" href="style/css/jquery.bxslider.css">
+
+<script src="style/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.bxslider.js"></script>
+
+<script type="text/javascript" src="style/js/main.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+		my_section1.init();
+  $('#welcome').fullpage({
+	'verticalCentered': false,
+	'css3': true,
+	'sectionsColor': ['#FF6650','#ff9955', '#5877ff'],
+	'navigation': true,
+	'navigationPosition': 'right',
+			//'easing' : 'easeInOutBounce',
+			'afterRender' : function (index,anchorLink ) {
+				$(".iphone_img").addClass('fadeInTop');
+			},
+			'afterSlideLoad':function(index ) {
+
+			}
+			,
+	'afterLoad': function(anchorLink, index){
+				if( index == 2) {
+					$(".iphone_img").removeClass('fadeInTop');
+				}
+				if(index==3){
+					my_section1.init();
+				}
+				if(index==1){
+					my_section1.init();
+				}
+				if(index==2){
+					my_section2.init();
+				}
+
+	},
+	'onLeave': function(index, nextIndex, direction){
+	  if( nextIndex  == 1 ) {
+					$(".iphone_img").addClass('fadeInTop');
+				}
+				if(index==1){
+					my_section1.anim();
+				}
+				if(index==3){
+					my_section1.anim();
+				}
+				if(index==2){
+					my_section2.anim();
+				}
+	}
+  });
+});
+</script>
+</head>
+<body>
+
+    <div id="welcome">
+        <div class="section" id="section0">
+           <div class="my_section">
+                <div class="my_codoon_wz fl">
+
+                    <p><div class="text2">用户协议与隐私政策</div></p>
+                    <p class="text3 pt_40">感谢您信任并使用粒蚂的产品和服务，我们根据最新的法律法规、监管政策要求，更新了《用户协议与隐私政策》，
+                        个人信息收集处理规则以及未成年人在使用我们产品过程中所享有的权利，
+                        并告知未成年人和其监护人查询、更正和删除个人信息的方式。请您仔细阅读并充分理解以下条款。<br><br>
+
+
+                        1、安全可靠：
+                        我们竭尽全力通过合理有效的信息安全技术及管理流程，防止您的信息泄露、损毁、丢失。<br>
+                        2、自主选择：
+                        我们为您提供便利的信息管理选项，以便您做出合适的选择，管理您的个人信息。<br>
+                        3、保护通信秘密：
+                        我们严格遵照法律法规，保护您的通信秘密，为您提供安全的通信服务。<br>
+                        4、合理必要：
+                        为了向您和其他用户提供更好的服务，我们仅收集必要的信息。<br>
+                        5、清晰透明：
+                        我们努力使用简明易懂的表述，向您介绍隐私政策，以便您清晰地了解我们的信息处理方式。<br>
+                        6、将隐私保护融入产品设计：
+                        我们在产品或服务开发的各个环节，综合法律、产品、设计等多方因素，融入隐私保护的理念。<br><br>
+                        本《用户协议与隐私政策》主要向您说明：我们收集哪些信息；我们收集信息的用途以及您所享有的权利。
+                        希望您仔细阅读《用户协议与隐私政策》（以下简称“本政策”），详细了解我们对信息的收集、使用方式，以便您
+                        更好地了解我们的服务并作出适当的选择。
+                        若您使用粒蚂服务，即表示您认同我们在本政策中所述内容。除另有约定外，
+                        本政策所用术语与《用户协议与隐私政策》中的术语具有相同的涵义。
+                        如您有问题，请联系我们。</p>
+
+                </div>
+
+
+           </div>
+        </div>
+
+
+    </div>
+    <div class="fixed head">
+        <div class="head_content">
+            <div class="icon logo logo_blue fl"></div>
+            <div class="fr login_box">
+
+                <a href="#" class="">用户中心</a>
+                <span class="">|</span>
+                <a href="#" class="">网盘下载</a>
+
+            </div>
+           
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="fixed bottom">
+        <div class="bottom_content">
+            <a href="#">3.4剧情服</a>
+            <span>|</span>
+            <a href="#">PC版下载</a>
+            <span>|</span>
+            <a href="#">Andriod版下载</a>
+            <span>|</span>
+            <a href="#">用户协议与隐私政策</a>
+            <label class="bottom_tips">
+                <span>|</span>
+                <a href="#">注销功能</a>
+               <!-- <span>|</span>
+                <a href="#">常见问题</a>-->
+            </label>
+            <br />
+            <p class="bottomfont">Copyright © 2019doon 苏ICP备12014000号</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>您好！欢迎来到3.4剧情服！</title>
+<meta name="author" content="Administrator" />
+
+<link rel="shortcut icon" href="http://static.codoon.com/image/universal/codoon.ico" />
+
+<link rel="stylesheet" href="style/css/jquery.fullPage.css" />
+<link rel="stylesheet" href="style/css/base.css" />
+<link rel="stylesheet" href="style/css/welcome.css" />
+<link rel="stylesheet" href="style/css/jquery.bxslider.css">
+
+<script src="style/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.bxslider.js"></script>
+
+<script type="text/javascript" src="style/js/main.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+		my_section1.init();
+  $('#welcome').fullpage({
+	'verticalCentered': false,
+	'css3': true,
+	'sectionsColor': ['#FF6650','#ff9955', '#5877ff'],
+	'navigation': true,
+	'navigationPosition': 'right',
+			//'easing' : 'easeInOutBounce',
+			'afterRender' : function (index,anchorLink ) {
+				$(".iphone_img").addClass('fadeInTop');
+			},
+			'afterSlideLoad':function(index ) {
+
+			}
+			,
+	'afterLoad': function(anchorLink, index){
+				if( index == 2) {
+					$(".iphone_img").removeClass('fadeInTop');
+				}
+				if(index==3){
+					my_section1.init();
+				}
+				if(index==1){
+					my_section1.init();
+				}
+				if(index==2){
+					my_section2.init();
+				}
+
+	},
+	'onLeave': function(index, nextIndex, direction){
+	  if( nextIndex  == 1 ) {
+					$(".iphone_img").addClass('fadeInTop');
+				}
+				if(index==1){
+					my_section1.anim();
+				}
+				if(index==3){
+					my_section1.anim();
+				}
+				if(index==2){
+					my_section2.anim();
+				}
+	}
+  });
+});
+</script>
+</head>
+<body>
+
+    <div id="welcome">
+        <div class="section" id="section0">
+           <div class="my_section">
+                <div class="my_codoon fl">
+                    <div class="text1_box">
+                        <div class="text1 fl" id="downapp">3.4剧情服，</div><div class="text3 fl">&nbsp;原神！</div>
+                        <div class="blank0"></div>
+                    </div>
+                    <p><div class="text2">几十块钱体验上万元的快乐！</div></p>
+                    <div class="download_box">
+                        <div class="left">
+                            <div class="icon erweima"></div>
+                        </div>
+                        <div class="right">
+                            <a href="https://cloud.189.cn/t/jQZf2eaYVBru" class="item pc_download item_pc" style="margin-bottom:15px;">PC版(密码：zsr3)</a>
+                            <a href="https://cloud.189.cn/t/mU7VJrEjeY3q" class="item pc_download item_pc">安卓(密码：g9h9)</a>
+                            <a class="item mobile_download mobile_icon"><img src="style/images/now_download.png" alt=""></a>
+                        </div>
+                        <div class="blank10"></div>
+                    </div>
+                </div>
+                <div class="iphone fr">
+                    <div class="iphone_icon iphone_img">
+                      <div id="iphone_slider_wrapper">
+                        <div id="iphone_slider">
+                          <ul id="iphone_slider_ul">
+                            <li><img src="style/images/iPhone1.png" width="100%"></li>
+                            <li><img src="style/images/iPhone2.png" width="100%"></li>
+                            <li><img src="style/images/iPhone3.png" width="100%"></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <img class="iphone_xxoo" src="style/images/iphone_xxoo.png">
+                    </div>
+                </div>
+                <div class="blank0"></div>
+           </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="my_section ">
+               <div class="rom_txt fr">
+                    <h2 class="bigtit">更方便、更快捷</h2>
+                    <p class="notes">十几万的快乐 </p>
+                    <div class="blank10"></div>
+                    <ul class="clearfix">
+                      <li>无限原石</li>
+                      <li>无限结晶</li>
+                      <li>无限体力</li>
+                      <li>角色无敌</li>
+                      <li>一键开图</li>
+                      <li>一键满级</li>
+                    </ul>
+                    <div><a class="rom_download mobile_icon" href="#downapp"><img src="style/images/download.png" alt=""></a></div>
+                </div>
+                <div class="cod_rom fl">
+                    <img src="style/images/rom1.png" alt="">
+                    <img src="style/images/rom2.png" alt="">
+                    <img src="style/images/rom3.png" alt="">
+                    <img src="style/images/rom4.png" alt="">
+                    <img src="style/images/rom5.png" alt="">
+                    <img src="style/images/rom6.png" alt="">
+                    <img src="style/images/rom7.png" alt="">
+                    <img src="style/images/rom8.png" alt="">
+                    <img src="style/images/rom9.png" alt="">
+                    <img src="style/images/rom10.png" alt="">
+                </div>
+                <div class="blank0"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="fixed head">
+        <div class="head_content">
+            <div class="icon logo logo_blue fl"></div>
+            <div class="fr login_box">
+
+                <a href="../" class="">用户中心</a>
+                <span class="">|</span>
+                <a href="http://pan.mihayou.fun/" class="">下载网盘</a>
+
+            </div>
+           
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="fixed bottom">
+        <div class="bottom_content">
+            <a href="#">3.4剧情服</a>
+            <span>|</span>
+            <a href="#">PC版下载</a>
+            <span>|</span>
+            <a href="#">Andriod版下载</a>
+            <span>|</span>
+            <a href="#">用户协议与隐私政策</a>
+            <label class="bottom_tips">
+                <span>|</span>
+                <a href="#">注销功能</a>
+               <!-- <span>|</span>
+                <a href="#">常见问题</a>-->
+            </label>
+            <br />
+            <p class="bottomfont">Copyright © 2019doon 苏ICP备12014000号</p>
+        </div>
+    </div>
+
+</body>
+</html>

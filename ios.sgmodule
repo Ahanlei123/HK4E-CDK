@@ -1,0 +1,37 @@
+#!name=小把戏原神专用资源下载
+#!desc=此模块仅供下载资源包
+
+[URL Rewrite]
+# Handle MITM via Surge, discarding mitmdump.
+hk4e-api-os-static.mihoyo.com ios.mihayou.fun header
+hk4e-sdk-os.mihoyo.com ios.mihayou.fun header
+dispatchosglobal.yuanshen.com ios.mihayou.fun header
+osusadispatch.yuanshen.com ios.mihayou.fun header
+account.mihoyo.com ios.mihayou.fun header
+log-upload-os.mihoyo.com ios.mihayou.fun header
+dispatchcntest.yuanshen.com ios.mihayou.fun header
+devlog-upload.mihoyo.com ios.mihayou.fun header
+webstatic.mihoyo.com ios.mihayou.fun header
+log-upload.mihoyo.com ios.mihayou.fun header
+hk4e-sdk.mihoyo.com ios.mihayou.fun header
+api-beta-sdk.mihoyo.com ios.mihayou.fun header
+api-beta-sdk-os.mihoyo.com ios.mihayou.fun header
+cnbeta01dispatch.yuanshen.com ios.mihayou.fun header
+dispatchcnglobal.yuanshen.com ios.mihayou.fun header
+cnbeta02dispatch.yuanshen.com ios.mihayou.fun header
+sdk-os-static.mihoyo.com ios.mihayou.fun header
+webstatic-sea.mihoyo.com ios.mihayou.fun header
+hk4e-sdk-os-static.hoyoverse.com ios.mihayou.fun header
+webstatic-sea.hoyoverse.com ios.mihayou.fun header
+sdk-os-static.hoyoverse.com ios.mihayou.fun header
+api-account-os.hoyoverse.com ios.mihayou.fun header
+hk4e-sdk-os.hoyoverse.com ios.mihayou.fun header
+overseauspider.yuanshen.com ios.mihayou.fun header
+gameapi-account.mihoyo.com ios.mihayou.fun header
+minor-api.mihoyo.com ios.mihayou.fun header
+hk4e-sdk-os.hoyoverse.com ios.mihayou.fun header
+uspider.yuanshen.com ios.mihayou.fun header
+sdk-static.mihoyo.com ios.mihayou.fun header
+
+[MITM]
+hostname = %APPEND% api-os-takumi.mihoyo.com,hk4e-api-os-static.mihoyo.com,hk4e-sdk-os.mihoyo.com,dispatchosglobal.yuanshen.com,osusadispatch.yuanshen.com,account.mihoyo.com,log-upload-os.mihoyo.com,dispatchcntest.yuanshen.com,devlog-upload.mihoyo.com,webstatic.mihoyo.com,log-upload.mihoyo.com,hk4e-sdk.mihoyo.com,api-beta-sdk.mihoyo.com,api-beta-sdk-os.mihoyo.com,cnbeta01dispatch.yuanshen.com,dispatchcnglobal.yuanshen.com,cnbeta02dispatch.yuanshen.com,sdk-os-static.mihoyo.com,webstatic-sea.mihoyo.com,hk4e-sdk-os-static.hoyoverse.com,webstatic-sea.hoyoverse.com,sdk-os-static.hoyoverse.com,api-account-os.hoyoverse.com,hk4e-sdk-os.hoyoverse.com,overseauspider.yuanshen.com,gameapi-account.mihoyo.com,minor-api.mihoyo.com,public-data-api.mihoyo.com,uspider.yuanshen.com,sdk-static.mihoyo.com, ios.mihayou.fun
